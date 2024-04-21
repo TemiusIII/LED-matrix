@@ -1,0 +1,5 @@
+{{ image_len }}
+{{ delay }}
+{% for image in images %}
+{{ image|replace("'", "")|replace("[", "")|replace("]", "")|replace(",", "")|replace("", "") }}
+{% endfor %}
